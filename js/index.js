@@ -15,39 +15,43 @@ var Navigator = React.createClass({
 				)
 			),
 			React.createElement(
-				"li",
+				"span",
 				null,
 				React.createElement(
-					"a",
-					{ href: "./about.html" },
-					"About"
-				)
-			),
-			React.createElement(
-				"li",
-				null,
+					"li",
+					null,
+					React.createElement(
+						"a",
+						{ href: "./about.html" },
+						"About"
+					)
+				),
 				React.createElement(
-					"a",
-					{ href: "./course.html" },
-					"Course"
-				)
-			),
-			React.createElement(
-				"li",
-				null,
+					"li",
+					null,
+					React.createElement(
+						"a",
+						{ href: "./course.html" },
+						"Course"
+					)
+				),
 				React.createElement(
-					"a",
-					{ href: "./Homework.html" },
-					"Homework"
-				)
-			),
-			React.createElement(
-				"li",
-				null,
+					"li",
+					null,
+					React.createElement(
+						"a",
+						{ href: "./Homework.html" },
+						"Homework"
+					)
+				),
 				React.createElement(
-					"a",
-					{ href: "./Project.html" },
-					"Project"
+					"li",
+					null,
+					React.createElement(
+						"a",
+						{ href: "./Project.html" },
+						"Project"
+					)
 				)
 			)
 		);

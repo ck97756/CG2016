@@ -1,5 +1,11 @@
 header li html, body, header, ul{
 	margin:0;padding:0;
+	
+}
+
+html{
+	background: #ccc;
+	font-family: 'Roboto', sans-serif;
 }
 
 body{
@@ -22,7 +28,8 @@ header ul{
 
 header li{
 	display: inline-block;
-	padding:10px 20px;
+	font-weight: 500;
+	position:relative;
 	transition: background ease 0.25s;
 }
 
@@ -32,4 +39,25 @@ header li:hover{
 
 header>ul>span{
 	float: right;
+}
+
+header li a{
+	display: inline-block;
+	padding:15px 20px;
+}
+
+header li a:after{
+	width:100%;
+	display: inline-block;
+	height:5px;;
+	position: absolute;
+	bottom:0px;
+	left:0;
+	content: "";
+	transition: background ease 0.25s;
+
+}
+
+header li a:hover:after{
+	background: #2196f3;
 }

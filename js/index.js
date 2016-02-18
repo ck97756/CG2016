@@ -1,79 +1,3 @@
-var Navigator = React.createClass({
-	render: function() {
-		return React.createElement(
-			"ul",
-			null,
-			React.createElement(
-				"li",
-				null,
-				React.createElement(
-					"a",
-					{ href: "./index.html" },
-					"CG2016"
-				)
-			),
-			React.createElement(
-				"span",
-				null,
-				React.createElement(
-					"li",
-					null,
-					React.createElement(
-						"a",
-						{ href: "./about.html" },
-						"About"
-					)
-				),
-				React.createElement(
-					"li",
-					null,
-					React.createElement(
-						"a",
-						{ href: "./course.html" },
-						"Course"
-					)
-				),
-				React.createElement(
-					"li",
-					null,
-					React.createElement(
-						"a",
-						{ href: "./Homework.html" },
-						"Homework"
-					)
-				),
-				React.createElement(
-					"li",
-					null,
-					React.createElement(
-						"a",
-						{ href: "./Project.html" },
-						"Project"
-					)
-				)
-			)
-		);
-	}
-});
-
-var TitleElement=React.createClass({
-	render:function(){
-		return React.createElement(
-			"div",
-			null,
-			React.createElement(
-				"div",
-				{className:"titleBody"},
-				React.createElement(
-					"div",
-					{id:"titleName"},
-					"Computer Graphic 2016"
-				)
-			)
-		);
-	}
-});
-
 var Title=React.createClass({
 	render:function(){
 		return React.createElement(
@@ -83,6 +7,17 @@ var Title=React.createClass({
 		);
 	}
 });
+
+var Info=React.createClass({
+	render:function(){
+		return React.createElement(
+			"div",
+			null
+		);
+	}
+});
+
+
 
 var Main = React.createClass({
 	render: function() {
@@ -96,6 +31,14 @@ var Main = React.createClass({
 			),
 			React.createElement(
 				Title,
+				null
+			),
+			React.createElement(
+				Info,
+				null
+			),
+			React.createElement(
+				Footer,
 				null
 			)
 		)

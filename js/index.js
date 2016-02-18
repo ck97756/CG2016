@@ -1,7 +1,5 @@
 var Navigator = React.createClass({
-	displayName: "Navigator",
-
-	render: function render() {
+	render: function() {
 		return React.createElement(
 			"ul",
 			null,
@@ -58,15 +56,49 @@ var Navigator = React.createClass({
 	}
 });
 
-var Main = React.createClass({
-	displayName: "Main",
-
-	render: function render() {
+var TitleElement=React.createClass({
+	render:function(){
 		return React.createElement(
-			"header",
+			"div",
 			null,
-			React.createElement(Navigator, null)
+			React.createElement(
+				"div",
+				{className:"titleBody"},
+				React.createElement(
+					"div",
+					{id:"titleName"},
+					"Computer Graphic 2016"
+				)
+			)
 		);
+	}
+});
+
+var Title=React.createClass({
+	render:function(){
+		return React.createElement(
+			"div",
+			{id:"title"},
+			React.createElement(TitleElement, null)
+		);
+	}
+});
+
+var Main = React.createClass({
+	render: function() {
+		return React.createElement(
+			"div",
+			null,
+			React.createElement(
+				"header",
+				null,
+				React.createElement(Navigator, null)
+			),
+			React.createElement(
+				Title,
+				null
+			)
+		)
 	}
 });
 

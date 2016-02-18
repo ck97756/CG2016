@@ -1,22 +1,18 @@
-header{
-	background: #555;
+
+
+#title>div{
+	height:600px;
+	background: url(../art/title.png);
 }
 
-header ul{
+.titleBody{
 	width:1024px;
 	margin:0 auto;
 }
 
-header li{
-	display: inline-block;
-	padding:10px 20px;
-	transition: background ease 0.25s;
-}
-
-header li:hover{
-	background:#333;
-}
-
-header span{
+#titleName{
+	color:#fff;
+	font-size: 64px;
 	float: right;
+	margin-top: 400px;
 }

@@ -1,8 +1,35 @@
-header lihtml, body, header, ul{
+header li html, body, header, ul{
 	margin:0;padding:0;
+}
+
+body{
+	min-width: 1024px;
 }
 
 a{
   text-decoration:none;
 	color:#fff;
+}
+
+header{
+	background: #555;
+}
+
+header ul{
+	width:1024px;
+	margin:0 auto;
+}
+
+header li{
+	display: inline-block;
+	padding:10px 20px;
+	transition: background ease 0.25s;
+}
+
+header li:hover{
+	background:#333;
+}
+
+header>ul>span{
+	float: right;
 }
